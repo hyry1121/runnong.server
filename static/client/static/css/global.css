@@ -1,0 +1,59 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:after,
+:before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 100px;  /* 100倍 使用rem作为单位  .14rem == 14px */
+}
+body {
+	font-size: 0;  /* html设置font-size:100px的时候，解决某些元素未定义字体大小或者换行空白的bug */
+	background: #f5f5f5;
+}
+ul {
+	list-style: none;
+}
+img {
+	border-style: none;
+}
+.wrap {
+	overflow: hidden;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+.floor {
+	margin-bottom: 20px;
+}
+.floor-header {
+	margin-bottom: 6px;
+	padding: 0 0 4px 4px;
+	border-bottom: 1px solid #D4D3D3;
+}
+.floor-header h1 {
+	font-size: .2rem;
+	color: #828282;
+}
+.icon-search {
+	width: 22px;
+	height: 22px;
+	background: url( './../img/search.png' ) no-repeat;
+}
+.icon-star {
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: url( './../img/star.png' ) no-repeat;
+}
+.no-more {
+	font-size: .14rem;
+	text-align: center;
+	color: #999;
+}

@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:after,
+:before {
+	box-sizing: border-box;
+}
+html {
+	font-size: 100px; /* 100倍 使用rem作为单位  .14rem == 14px */
+	color: #fff;
+	font-family: "微软雅黑" !important;
+}
+body {
+	background: url('./../img/bg.jpg') fixed;
+	font-size: 0; /* html设置font-size:100px的时候，解决某些元素未定义字体大小或者换行空白的bug */
+}
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+button,
+input {
+	border: none;
+	font-family: "微软雅黑";
+}
+input {
+	padding: 4px 0 4px 4px;
+	font-size: .16rem;
+}
+input[disabled] {
+	background: none;
+	color: #fff;
+}
+img {
+	display: block;
+	border-style: none;
+}
+
+.swal2-h2 {
+	text-align: left;
+	font-size: .16rem;
+}
+
+/** 按钮  **/
+.btn {
+	display: inline-block;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	transition: background .4s;
+}
+.btn[disabled],
+.btn[disabled]:hover {
+	transition: none !important;
+	cursor: no-drop !important;
+	color: #ababab !important;
+	background: #e6e6e6 !important;
+}
+.btn-blue {
+	background: #00b0ff;
+}
+.btn-blue:hover {
+	background: #0091ea;
+}
+.btn-green {
+	background: #5eb95e;
+}
+.btn-green:hover {
+	background: #4aaa4a;
+}
+.btn-red {
+	background: #d32f2f;
+}
+.btn-red:hover {
+	background: #b71c1c;
+}
+.btn-lg {
+	padding: 10px 20px;
+	font-size: .18rem;
+}
+.btn-md {
+	padding: 4px 10px;
+	font-size: .16rem;
+}
+
+/** 卡片 **/
+.card {
+	padding: 10px;
+	background: rgba(0,0,0,.5);
+}
+.card-content {
+	margin-bottom: 20px;
+}
+.card-content--item {
+	margin-bottom: 20px;
+}
+.card-content--item:last-child {
+	margin-bottom: 0;
+}
+.card-content--item h2 {
+	padding: 4px 0 4px 4px;
+	font-size: .18rem;
+	font-weight: 400;
+	background: rgba(0,0,0,.3);
+}
+.card-content--text {
+	display: block;
+	margin-top: 6px;
+	padding-left: 4px;
+	font-size: .16rem;
+}
+.card-content--inputtext {
+	display: block;
+	width: 100%;
+}
+.card-content--inputradio {
+	display: flex;
+	margin-top: 6px;
+}
+.card-content--inputradio li {
+	display: flex;
+	margin: 0 14px 6px 0;
+}
+.card-content--inputradio li:last-child {
+	margin-bottom: 0;
+}
+.card-content--inputradio li label {
+	font-size: .16rem;
+}
+.card-content--inputradio li input,
+.card-content--inputcheckbox {
+	width: 30px;
+	height: 20px;
+}
+.card-content--inputcheckbox {
+	margin-top: 6px;
+}
+.card-content--inputnumber {
+	width: 20%;
+}
+.card-content--img---100w {
+	width: 100%;
+}
+.card-content--img---md {
+	width: 80px;
+	height: 80px;
+	margin: 0 auto;
+}
+.card-action {
+	display: flex;
+	justify-content: space-around;
+	padding-top: 6px;
+	border-top: 1px solid #C5C5C5;
+}
