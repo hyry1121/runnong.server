@@ -22,7 +22,7 @@ rootRouter( app )
 app.use( compression() )
 // 静态服务
 app.use( '/', express.static('static/client') )
-app.use( '/admin', express.static('static/admin') )
+app.use( '/adminhahaha', express.static('static/admin') )
 
 // 监听端口
 app.listen( 3000, (req,res) => {
