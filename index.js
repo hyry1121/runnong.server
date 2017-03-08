@@ -25,6 +25,6 @@ app.use( '/', express.static('static/client') )
 app.use( '/adminhahaha', express.static('static/admin') )
 
 // 监听端口
-app.listen( 3000, (req,res) => {
-	console.log( 'listen 3000 ...' )
+app.listen( 80, (req,res) => {
+	console.log( 'listen 80 ...' )
 })
