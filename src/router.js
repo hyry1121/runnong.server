@@ -1,4 +1,3 @@
-const express = require( 'express' )
 const cityRouter = require( './api/city' ),
 			sliderRouter = require( './api/slider' ),
 			shopRouter = require( './api/shop' ),
