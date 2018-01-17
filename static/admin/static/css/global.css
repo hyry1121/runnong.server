@@ -73,7 +73,8 @@ img {
 	background: #4aaa4a;
 }
 .btn-red {
-	background: #d32f2f;
+	background: transparent;
+	border: 1px solid #b71c1c;
 }
 .btn-red:hover {
 	background: #b71c1c;

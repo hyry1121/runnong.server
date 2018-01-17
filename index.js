@@ -5,12 +5,12 @@ const express = require( 'express' ),
 const rootRouter = require( './src/router' )
 
 // 链接数据库
-mongoose.connect( 'mongodb://localhost/runnong' )
+mongoose.connect( 'mongodb://localhost/mall' )
 
 const app = express()
 
 // 设置跨域 - 开发的时候需要打开
-//app.use( require('cors')() )
+// app.use( require('cors')() )
 
 // 解析请求数据
 app.use( bodyParser.json() )  //解析 application/json 的请求头
