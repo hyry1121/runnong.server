@@ -5,6 +5,7 @@ const express = require( 'express' ),
 const rootRouter = require( './src/router' )
 
 // 链接数据库
+// 开发runnong  上线mall
 mongoose.connect( 'mongodb://localhost/mall' )
 
 const app = express()
